@@ -1,8 +1,7 @@
-import PyPDF2
-import sys
 import os
 from time import sleep
 import subprocess
+import PyPDF2
 
 
 # open a file
@@ -10,18 +9,23 @@ import subprocess
 
 # open a file from a local directory
 file_name = ""
-line_count = 0
+lines = []
 
 # search relevant files with the input file name
-while line_count != 1:
-    if line_count == 0:
+os.chdir("/Users/qiyshen")
+print(os.getcwd())
+
+while len(lines) != 2:
+    if len(lines) == 0:
         file_name = raw_input("Enter the pdf file to proceed: ")
     else:
-        file_name = raw_input("Enter a file from the list of results above to proceed: ")
-    os_command_find = subprocess.check_output("find . -name " + file_name + " | xargs grep -v Caches | xargs grep -l '.pdf'")
-    print(os_command_find)
-    # ount the number of lines from the output
-    line_count = (subprocess.check_output("wc -l " + OScommandFind)
-
-# pdfFileObj = open(os_command_find, 'rb')
-# pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+        file_name = raw_input("COPY a FULL file name from the list of results above to proceed: ")
+        #enable user to select options. 
+    find_output = subprocess.check_output("find . -name *" + file_name + "* | xargs grep -v Caches | awk '{print $3}'", shell=True)
+    print(find_output)
+    # count the number of lines from the output
+    lines = find_output.split('\n')
+    
+        
+pdfFileObj = open(file_name, 'rb')
+pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
