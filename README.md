@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Programming-Workshop
 
-You can use the [editor on GitHub](https://github.com/S-Stefan-S/Programming-Workshop/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This site contains 99% code that I wrote in Nueva School - Programming Workshop. 
 
 ### Markdown
 
