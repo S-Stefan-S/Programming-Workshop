@@ -29,3 +29,5 @@ while len(lines) != 2:
         
 pdfFileObj = open(file_name, 'rb')
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+pageObj = pdfReader.getPage(0)
+pageObj.extractText()
