@@ -1,3 +1,6 @@
+from __future__ import print_function
+import math
+
 z = 0
 a = []
 
@@ -16,11 +19,10 @@ def sequence(i):
     b = a
     b = []
     for n in range(i):
-        # c = 0 + (5 * n)
-        # c = 0 + (10 * n)
-        c = 250 - (4.5 * n)
+        c = 10*(((math.cos((1+2.3*n)/3))*3)+6)
         b.append(c)
-    print(b)
+    one_decimals = ["%.1f" % c for c in b]
+    print(*one_decimals, sep = '\n')
 
 
 # choose sequence or serie
