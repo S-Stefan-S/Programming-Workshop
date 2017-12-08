@@ -7,18 +7,19 @@ This site contains 99% code that I wrote in Nueva School - Programming Workshop.
 This mainly contains programs that are bizzard, likely to freeze your computer and will definitely make your life a lot harder. 
 
 ```markdown
-##CONTENTS
+## CONTENTS
 
 - Programs for my math classes
 - System Monitor terminal app
 - Others
 
-<!-- **Bold** and _Italic_ and `Code` text -->
-
-<!-- [Link](url) and ![Image](src) -->
 ```
 
 For more details see [My Github Repository](https://github.com/S-Stefan-S/Programming-Workshop).
+
+<!-- **Bold** and _Italic_ and `Code` text -->
+
+<!-- [Link](url) and ![Image](src) -->
 
 <!-- ### Jekyll Themes
 
