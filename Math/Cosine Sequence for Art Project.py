@@ -8,8 +8,8 @@ a = []
 def series(i):
     x = z
     x = 0
-    for n in range(i):
-        x += 0 + (5 * n)
+    for n in range(i+1):
+        x += 10 * (((math.cos((1 + 2.3 * n) / 3)) * 3) + 6)
         # x += 0 + (10 * n)
         # x += 250 - (4.5 * n)
     print(x)
@@ -18,7 +18,7 @@ def series(i):
 def sequence(i):
     b = a
     b = []
-    for n in range(i):
+    for n in range(i+1):
         c = 10*(((math.cos((1+2.3*n)/3))*3)+6)
         b.append(c)
     one_decimals = ["%.1f" % c for c in b]
@@ -30,15 +30,16 @@ def sequence(i):
 # diplay choices
 
 def display_choices():
-    print("\n\n[1]sequence")
+    print("\n\n*Starting off with x = 0")
+    print("[1]sequence")
     print("[2]series")
 
 
 def decision(choice):
     if choice == 1:
-        sequence(input("Enter the term number: "))
+        sequence(int(input("Enter the term number: ")))
     elif choice == 2:
-        series(input("Enter the term number: "))
+        series(int(input("Enter the term number: ")))
     else:
         print("Error!")
 
